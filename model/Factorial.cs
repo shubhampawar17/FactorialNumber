@@ -8,14 +8,14 @@ namespace FactorialNumber.model
 {
     internal class Factorial
     {
-        public static long CalculateFactorial(int num)
+        public static long CalculateFactorial(int number)
         {
-            long fact = 1;
-            for (int i = num; i >= 1; i--)
+            long factorial = 1;
+            for (int i = number; i >= 1; i--)
             {
-                fact = fact * i;
+                factorial = factorial * i;
             }
-            return fact;
+            return factorial;
         }
     }
 }

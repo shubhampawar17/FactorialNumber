@@ -12,7 +12,7 @@ namespace FactorialNumber
     {
         static void Main(string[] args)
         {
-            int num;
+            int number;
             bool exit = false;
 
             while (!exit)
@@ -22,19 +22,16 @@ namespace FactorialNumber
 
                 while (true)
                 {
-                    num = Convert.ToInt32(Console.ReadLine());
-                    if (num < 0)
+                    number = Convert.ToInt32(Console.ReadLine());
+                    if (number < 0)
                     {
                         Console.WriteLine("Please enter a positive number:");
                     }
-                    else
-                    {
                         break; 
-                    }
                 }
 
-                long factorial = Factorial.CalculateFactorial(num);
-                Console.WriteLine($"Factorial of {num} is: {factorial}");
+                long factorial = Factorial.CalculateFactorial(number);
+                Console.WriteLine($"Factorial of {number} is: {factorial}");
 
                 Console.WriteLine("\nChoose an option:");
                 Console.WriteLine("1. Check another number");
